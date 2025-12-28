@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+outputs/
+.datasets/
+data/
+*.parquet
+*.feather
+*.arrow
+*.npy
+*.npz
+*.pkl
+*.bin
+*.zip
+*.tar
+*.gz
+.DS_Store

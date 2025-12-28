@@ -1,0 +1,19 @@
+# Пример конфигурации сбора признаков из файловой системы
+paths:
+  - ./data/safe_samples
+extensions:
+  - .txt
+  - .log
+  - .csv
+min_size_bytes: 1
+max_size_bytes: 5000000
+exclude_paths:
+  - ./data/safe_samples/tmp
+context_defaults:
+  source_channel: filesystem
+  user_privilege_level: standard
+  access_time_category: recent
+output_dir: outputs/real_example
+export_formats:
+  - csv
+  - json

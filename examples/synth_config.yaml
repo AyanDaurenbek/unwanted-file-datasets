@@ -1,0 +1,18 @@
+# Пример конфигурации синтетической генерации
+n_samples: 500
+class_distribution:
+  benign: 0.45
+  malware: 0.2
+  potentially_unwanted: 0.15
+  policy_violation: 0.1
+  confidential_suspected: 0.1
+noise_level: 0.08
+hybrid_ratio: 0.1
+hybrid_strength: 0.4
+adversarial_ratio: 0.05
+smoothing_factor: 0.3
+seed: 13
+output_dir: outputs/synthetic_example
+export_formats:
+  - csv
+  - json
