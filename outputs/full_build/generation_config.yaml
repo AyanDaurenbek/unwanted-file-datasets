@@ -1,0 +1,36 @@
+real_sources:
+  paths:
+  - ./data/safe_samples
+  extensions:
+  - .txt
+  - .log
+  - .csv
+  min_size_bytes: 1
+  max_size_bytes: 5000000
+  context_defaults:
+    source_channel: filesystem
+    user_privilege_level: standard
+    access_time_category: recent
+synth_config:
+  n_samples: 1000
+  class_distribution:
+    benign: 0.5
+    malware: 0.2
+    potentially_unwanted: 0.1
+    policy_violation: 0.1
+    confidential_suspected: 0.1
+  noise_level: 0.05
+  hybrid_ratio: 0.05
+  hybrid_strength: 0.4
+  adversarial_ratio: 0.1
+  smoothing_factor: 0.25
+split_config:
+  train: 0.7
+  val: 0.15
+  test: 0.15
+export_config:
+  output_dir: outputs/full_build
+  formats:
+  - csv
+  - json
+seed: 21

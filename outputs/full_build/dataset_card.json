@@ -1,0 +1,95 @@
+{
+  "dataset_card_version": 1,
+  "seed": 21,
+  "num_records": 1000,
+  "class_balance": {
+    "benign": 500,
+    "malware": 200,
+    "policy_violation": 100,
+    "potentially_unwanted": 100,
+    "confidential_suspected": 100
+  },
+  "splits": {
+    "train": 700,
+    "test": 150,
+    "val": 150
+  },
+  "numeric_stats": {
+    "file_size_bytes": {
+      "min": 25806.0,
+      "max": 21898221.0,
+      "mean": 3735048.4126,
+      "std": 3539178.00368209
+    },
+    "entropy": {
+      "min": 0.875,
+      "max": 1.0,
+      "mean": 0.9875,
+      "std": 0.03751876407422901
+    },
+    "num_strings": {
+      "min": 14.0,
+      "max": 9792.0,
+      "mean": 2170.9292,
+      "std": 1841.8202260841235
+    },
+    "avg_string_length": {
+      "min": 1.694590948966038,
+      "max": 37.401462884353734,
+      "mean": 19.744875075637143,
+      "std": 4.956671041367624
+    },
+    "printable_ratio": {
+      "min": 0.10004304002343448,
+      "max": 0.9637202656663849,
+      "mean": 0.6358817201231349,
+      "std": 0.197099946308921
+    },
+    "null_byte_ratio": {
+      "min": 2.5779548590872946e-05,
+      "max": 0.2372214160933196,
+      "mean": 0.03874524325531308,
+      "std": 0.04807039348217446
+    },
+    "number_of_sections": {
+      "min": 1.0,
+      "max": 9.0,
+      "mean": 3.3946,
+      "std": 2.0371747399084157
+    },
+    "imported_functions_count": {
+      "min": 0.0,
+      "max": 200.0,
+      "mean": 34.292,
+      "std": 47.88132409611494
+    },
+    "suspicious_api_score": {
+      "min": 0.00022264846331662702,
+      "max": 0.9994078411770915,
+      "mean": 0.35310620144866695,
+      "std": 0.27013918710284057
+    }
+  },
+  "feature_schema": [
+    "file_size_bytes",
+    "file_extension",
+    "mime_type",
+    "creation_time_delta",
+    "entropy",
+    "num_strings",
+    "avg_string_length",
+    "printable_ratio",
+    "null_byte_ratio",
+    "number_of_sections",
+    "has_executable_flag",
+    "has_macros",
+    "imported_functions_count",
+    "suspicious_api_score",
+    "source_channel",
+    "user_privilege_level",
+    "access_time_category",
+    "class_label",
+    "split",
+    "record_id"
+  ]
+}
